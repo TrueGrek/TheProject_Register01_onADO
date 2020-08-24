@@ -13,11 +13,11 @@
             <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="Id" DataSourceID="SqlDataSource1">
                 <Columns>
                     <asp:BoundField DataField="Id" HeaderText="Id" InsertVisible="False" ReadOnly="True" SortExpression="Id" />
-                    <asp:BoundField DataField="IdUser" HeaderText="IdUser" SortExpression="IdUser" />
-                    <asp:BoundField DataField="Domens" HeaderText="Domens" SortExpression="Domens" />
+                    <asp:BoundField DataField="Login" HeaderText="Login" SortExpression="Login" />
+                    <asp:BoundField DataField="Password" HeaderText="Password" SortExpression="Password" />
                 </Columns>
             </asp:GridView>
-            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [Tables]"></asp:SqlDataSource>
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [Users]"></asp:SqlDataSource>
 
         </div>
     </form>
